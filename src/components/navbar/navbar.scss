@@ -3,19 +3,22 @@
    height: 100px;
    .wapper{
       max-width: 1366px;
-      margin: auto 100px;
+      margin: auto 200px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: rebeccapurple;
+      // background-color: rebeccapurple;
       height: 100%;
+      span.Name{
+         font-weight: bold;
+         font-size:25px;
 
+        }
       .social{
          display: flex;
          gap: 30px;
-         span{
-          font-weight: bold;
-         }
+
+         
          img{
             width: 20px;
             height: 20px;

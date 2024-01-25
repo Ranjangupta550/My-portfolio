@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    z-index: 10;
     color: black;
+   
     .bg{
  
         position: fixed;
@@ -37,6 +39,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
+        // position: absolute;
 
     }
 }
