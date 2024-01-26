@@ -1,20 +1,20 @@
 import "./parallax.scss";
-
+import {motion} from "framer-motion";
 const Parallax = ({ type }) => {
   return (
     <div
       className="parallax"
       style={{
         background:
-        type==="services"
+        type==="skills"
         ? "linear-gradient(180deg, #111132,#0c0c1d)"
       :"linear-gradient(180deg, #111132,#505064)",
     }}
     >
-      <h1>{type === "services" ? "Skills Section?" : "Project Section?"}</h1>
-      <div className="mountains"></div>
-      <div className="planets"></div>
-      <div className="stars"></div>
+      <motion.h1>{type === "skills" ? "Skills Section?" : "Project Section?"}</motion.h1>
+      <motion.div className="mountains"></motion.div>
+      <motion.div className="planets"></motion.div>
+      <motion.div className="stars"></motion.div>
     </div>
   );
 };
