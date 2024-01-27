@@ -13,7 +13,7 @@ const Parallax = ({ type }) => {
   });
 
   const yBg=useTransform(scrollYProgress,[0,1],["0%","100%"]);
-  const yText=useTransform(scrollYProgress,[0,1],["0%","500%"]);
+  const yText=useTransform(scrollYProgress,[0,1],["0%","400%"]);
   return (
     <div
       className="parallax"
@@ -25,7 +25,7 @@ const Parallax = ({ type }) => {
       :"linear-gradient(180deg, #111132,#505064)",
     }}
     >
-      <motion.h1 style={{y:yText}}>{type === "skills" ? "Skills Section?" : "Project Section?"}</motion.h1>
+      <motion.h1 style={{y:yText}}>{type === "skills" ? "↓ Skills Section ↓" : "↓ Project Section ↓"}</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
        className="planets"
